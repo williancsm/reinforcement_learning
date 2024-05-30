@@ -181,6 +181,7 @@ class RLGlue:
         is_terminal = False
 
         self.rl_start()
+        num_steps = 0
 
         while (not is_terminal) and ((max_steps_this_episode == 0) or
                                      (self.num_steps < max_steps_this_episode)):
